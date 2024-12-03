@@ -73,43 +73,61 @@ function getData() {
 
       // Theme article principal :
       let themeArticlePrincipal = data.journal.articlePrincipal.theme;
-      console.log(themeArticlePrincipal);
+      // console.log(themeArticlePrincipal);
 
       // Date article principal :
       let dateArticlePrincipal = data.journal.articlePrincipal.date;
-      console.log(dateArticlePrincipal);
+      // console.log(dateArticlePrincipal);
 
       // Description article principal :
       let descriptionArticlePrincipal = data.journal.articlePrincipal.description;
-      console.log(descriptionArticlePrincipal);
+      // console.log(descriptionArticlePrincipal);
 
       // Titre Article 1 :
       let titreArticle1 = data.journal.articles[0].titre;
-      console.log(titreArticle1);
+      // console.log(titreArticle1);
 
       // Theme Article 1 :
       let themeArticle1 = data.journal.articles[0].theme;
-      console.log(themeArticle1);
+      // console.log(themeArticle1);
 
       // Date Article 1  :
       let dateArticle1 = data.journal.articles[0].date;
-      console.log(dateArticle1);
+      // console.log(dateArticle1);
 
       // Description Article 1 (attention subtilité lien arborescence regarder dans article le thème puis regarder dans thème pour voir le numéro correspondant) :
       let descriptionArticle1 = data.journal.themes[1].description;
-      console.log(descriptionArticle1);
+      // console.log(descriptionArticle1);
 
       // Image Article 1  :
       let imageArticle1 = data.journal.articles[0].image;
-      console.log(imageArticle1);
+      // console.log(imageArticle1);
 
       // Description équipe - Prénom 1 : 
       let prenom1Denotreequipe = data.journal.auteurs[0].prenom;
-      console.log(prenom1Denotreequipe);
+      // console.log(prenom1Denotreequipe);
 
       // Description équipe - Présentation 1: 
       let presentationDenotreequipe = data.journal.auteurs[0].presentation;
-      console.log(presentationDenotreequipe);
+      // console.log(presentationDenotreequipe);
+
+      //Bloque article principal html : 
+      let imageArticlePrincipal = document.getElementById('imageArticlePrincipal');
+      // console.log(imageArticlePrincipal);
+
+     let article-container : `<div id = "imageArticlePrincipal">
+         <img src="images\image.png" alt="">
+      </div>
+      <div class="articlePrincipal">
+         <h1>${titreArticlePrincipal}</h1>
+         <h2>${themeArticlePrincipal}  -  ${dateArticlePrincipal} </h2>
+         <p>${descriptionArticlePrincipal}</p> 
+      </div>`
+     
+
+
+
+      });
 
 
 
@@ -123,13 +141,6 @@ function getData() {
 
 
 
-
-
-
-
-       
-
-      
 
        /// FIN DU CODE
      })

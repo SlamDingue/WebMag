@@ -1,0 +1,53 @@
+html, body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    gap: 80px;
+    width: 100%;
+    height: 100%;  
+ }
+
+ .article-container{
+    background: grey;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+ }
+ .button-container{
+    display: flex;
+    gap: 16px;
+ }
+ 
+ #generator div{
+    width: 100px;
+    height: 100px;
+    background: white;
+ }
+
+ #imageArticlePrincipal{
+    width: 100%;
+ }
+
+#imageArticlePrincipal img{
+    width: 100%;
+}
+ 
+.articlePrincipal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.button-container{
+    display: flex;
+    width: 100%;
+ }
+ 
