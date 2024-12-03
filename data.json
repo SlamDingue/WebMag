@@ -1,0 +1,90 @@
+{
+    "journal": {
+      "nomJournal": "Neuro & AI Insights",
+      "phraseAccroche": "Explorer l'esprit humain et l'intelligence artificielle",
+      "texteAppelAction": "Abonnez-vous à notre newsletter pour des analyses approfondies",
+      "articlePrincipal": {
+        "titre": "Quand l'IA s'inspire du cerveau humain : Les avancées de 2024",
+        "description": "Des chercheurs repoussent les limites en utilisant des modèles neuronaux biologiques pour concevoir des IA plus performantes.",
+        "date": "1er Décembre 2024",
+        "theme": "Innovations",
+        "image": "images/image.png"
+      },
+      "articles": [
+        {
+          "titre": "Le rôle des neurosciences dans le développement des réseaux neuronaux",
+          "date": "28 Novembre 2024",
+          "theme": "Recherche",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "Neurotechnologies et IA : Des interfaces cerveau-machine révolutionnaires",
+          "date": "20 Novembre 2024",
+          "theme": "Applications",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "Simulation du cerveau : Peut-on recréer la conscience artificielle ?",
+          "date": "15 Novembre 2024",
+          "theme": "Débats",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "DeepMind et les neurosciences : De nouveaux algorithmes inspirés de la plasticité cérébrale",
+          "date": "10 Novembre 2024",
+          "theme": "Partenariats",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "Les biais cognitifs en IA : Ce que les neurosciences peuvent nous apprendre",
+          "date": "5 Novembre 2024",
+          "theme": "Éthique",
+          "image": "images/image.png"
+        }
+      ],
+      "themes": [
+        {
+          "nom": "Innovations",
+          "description": "Les avancées technologiques qui rapprochent neurosciences et IA."
+        },
+        {
+          "nom": "Recherche",
+          "description": "Études et travaux sur le lien entre cerveau et intelligence artificielle."
+        },
+        {
+          "nom": "Applications",
+          "description": "Les usages concrets des interfaces cerveau-machine et de l'IA."
+        },
+        {
+          "nom": "Débats",
+          "description": "Les questions philosophiques et scientifiques autour de la conscience et de l'IA."
+        },
+        {
+          "nom": "Partenariats",
+          "description": "Les collaborations entre laboratoires de neurosciences et entreprises d'IA."
+        },
+        {
+          "nom": "Éthique",
+          "description": "Les enjeux éthiques liés à l'intégration de l'IA dans les neurosciences."
+        }
+      ],
+      "auteurs": [
+        {
+          "prenom": "Claire",
+          "typeExperience": "Chercheuse en neurosciences",
+          "presentation": "Je travaille sur la compréhension des processus neuronaux et leur modélisation en IA."
+        },
+        {
+          "prenom": "Thomas",
+          "typeExperience": "Ingénieur en IA",
+          "presentation": "Spécialisé dans les algorithmes d'apprentissage profond, je m'inspire des structures cérébrales pour innover."
+        },
+        {
+          "prenom": "Elena",
+          "typeExperience": "Éthicienne en technologies",
+          "presentation": "J'explore les implications éthiques des technologies émergentes en neurosciences et intelligence artificielle."
+        }
+      ]
+    }
+  }
+  
