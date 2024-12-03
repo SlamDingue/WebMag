@@ -115,7 +115,7 @@ function getData() {
       let imageArticlePrincipal = document.getElementById('imageArticlePrincipal');
       // console.log(imageArticlePrincipal);
 
-     let article-container : `<div id = "imageArticlePrincipal">
+     let article-container: `<div id = "imageArticlePrincipal">
          <img src="images\image.png" alt="">
       </div>
       <div class="articlePrincipal">
