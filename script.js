@@ -132,10 +132,10 @@ function getData() {
   let presentationContainer = document.getElementById('presentation');
   let nomJournal = data.journal.nomJournal;
   let phraseAccroche = data.journal.phraseAccroche;
-  data.journal.themes.forEach((theme) => {
-  let themenom = data.journal.themes.nom;
-  let description = data.journal.themes.description; 
-        console.log(nomJournal,phraseAccroche,theme,description);
+    data.journal.themes.forEach((theme) => {
+          let themenom = theme.nom;
+          let description = theme.description; 
+          console.log(nomJournal,phraseAccroche,theme,description);
 
 
 
@@ -150,7 +150,7 @@ function getData() {
          <p>${description}</p>
       </div> `
 
- presentationContainerContainer.insertAdjacentHTML("beforeend", presentation);
+      presentationContainer.insertAdjacentHTML("beforeend",presne);
 });
  }
 
