@@ -150,7 +150,7 @@ function getData() {
          <p>${description}</p>
       </div> `
 
-      presentationContainer.insertAdjacentHTML("beforeend",presne);
+      presentationContainer.insertAdjacentHTML("beforeend", presentation);
 });
  }
 
