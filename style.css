@@ -68,3 +68,10 @@ ul {
    display: flex;
    justify-content: space-evenly;
 }
+
+#articlePrincipal{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 70%;
+}

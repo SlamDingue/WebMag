@@ -208,14 +208,14 @@ function afficherArticles(data) {
 
     
 
-    let articlePrincipal = `<div id = "articlePrincipal">
+    let articles = `<div id = "articles">
     <img src="${image}" alt="${titre}">
     <h1>${titre}</h1>
     <h2>${theme}  -  ${date} </h2>
     <a class ="button primary" href="#">Lire l'article </a>
  </div>`
 
-  articleContainer.insertAdjacentHTML("afterend", articlePrincipal);
+  articleContainer.insertAdjacentHTML("afterend", articles);
 
 });
 };
