@@ -79,6 +79,10 @@ function getData() {
       let dateArticlePrincipal = data.journal.articlePrincipal.date;
       // console.log(dateArticlePrincipal);
 
+      // Image article principal :
+      let imageArticlePrincipal = data.journal.articlePrincipal.image;
+      // console.log(imageArticlePrincipal);
+
       // Description article principal :
       let descriptionArticlePrincipal = data.journal.articlePrincipal.description;
       // console.log(descriptionArticlePrincipal);
@@ -110,37 +114,9 @@ function getData() {
       // Description équipe - Présentation 1: 
       let presentationDenotreequipe = data.journal.auteurs[0].presentation;
       // console.log(presentationDenotreequipe);
-
-      //Bloque article principal html : 
-      let imageArticlePrincipal = document.getElementById('imageArticlePrincipal');
-      // console.log(imageArticlePrincipal);
-
-     let article-container: `<div id = "imageArticlePrincipal">
-         <img src="images\image.png" alt="">
-      </div>
-      <div class="articlePrincipal">
-         <h1>${titreArticlePrincipal}</h1>
-         <h2>${themeArticlePrincipal}  -  ${dateArticlePrincipal} </h2>
-         <p>${descriptionArticlePrincipal}</p> 
-      </div>`
-     
-
-
-
-      });
-
-
-
-
-
-
-
-
-
-
-
-
-
+      afficherArticles(data);
+      afficherArticle(data);
+      afficherPresentation(data);
 
        /// FIN DU CODE
      })
@@ -151,4 +127,83 @@ function getData() {
 
  ///ON écrit les fonctions ici
 
+
+ function afficherPresentation(data) {
+  let presentationContainer = document.getElementById('presentation');
+  let nomJournal = data.journal.nomJournal;
+  let phraseAccroche = data.journal.phraseAccroche;
+  data.journal.themes.forEach((theme) => {
+  let themenom = data.journal.themes.nom;
+  let description = data.journal.themes.description; 
+        console.log(nomJournal,phraseAccroche,theme,description);
+
+
+
+    let presentation = ` 
+      <div id="title-container">
+      <h2>${nomJournal}</h2>
+      <h1>${phraseAccroche}</h1>
+      </div>
+
+      <div class="theme-container">
+         <h1>${themenom}</h1>
+         <p>${description}</p>
+      </div> `
+
+ presentationContainerContainer.insertAdjacentHTML("beforeend", presentation);
+});
+ }
+
+
+
+// Fonction de l'article principal - attention on appelle la fonction et c'est en haut.
+// Attention il n'y a pas de boucles car on appelle une fois l'information.
+
+function afficherArticle(data) {
+  let articlePrincipalContainer = document.getElementById('article-principal');
+  let article = data.journal.articlePrincipal;
+    let titre = article.titre;
+    let date = article.date;
+    let theme = article.theme;
+    let image = article.image;
+    let description = article.description; 
+        console.log(titre, date,theme,image, description);
+
+
+
+    let articlePrincipal = `<div id = "articlePrincipal">
+    <img src="${image}" alt="${titre}">
+    <h1>${titre}</h1>
+    <h2>${theme}  -  ${date} </h2>
+    <p>${description}</p>
+    <a class ="button primary" href="#">Lire l'article </a>
+ </div>`
+
+ articlePrincipalContainer.insertAdjacentHTML("beforeend", articlePrincipal);
+}
+
+//  Fonction des articles que l'on affiche via la fonction , attention on appelle la fonction et c'est en haut . On fait une boucle dans la fonction pour que cela appelle les différents articles. 
+
+function afficherArticles(data) {
+  let articleContainer = document.getElementById('article-container');
+  data.journal.articles.forEach((article) => {
+    let titre = article.titre;
+    let date = article.date;
+    let theme = article.theme;
+    let image = article.image;
+     console.log(titre, date,theme,image);
+
+
     
+
+    let articlePrincipal = `<div id = "articlePrincipal">
+    <img src="${image}" alt="${titre}">
+    <h1>${titre}</h1>
+    <h2>${theme}  -  ${date} </h2>
+    <a class ="button primary" href="#">Lire l'article </a>
+ </div>`
+
+  articleContainer.insertAdjacentHTML("afterend", articlePrincipal);
+
+});
+};
