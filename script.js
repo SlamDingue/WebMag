@@ -114,9 +114,14 @@ function getData() {
       // Description équipe - Présentation 1: 
       let presentationDenotreequipe = data.journal.auteurs[0].presentation;
       // console.log(presentationDenotreequipe);
-      afficherArticles(data);
-      afficherArticle(data);
+
+
+      // On appelle les fonctions après les avoir créer. Les fonctions sont en bas pour une meilleure visibilité. 
+
       afficherPresentation(data);
+      afficherArticle(data);
+      afficherArticles(data);
+      afficherAuteurs(data);
 
        /// FIN DU CODE
      })
@@ -127,30 +132,37 @@ function getData() {
 
  ///ON écrit les fonctions ici
 
-
+// Présentation des thèmes 
  function afficherPresentation(data) {
   let presentationContainer = document.getElementById('presentation');
   let nomJournal = data.journal.nomJournal;
   let phraseAccroche = data.journal.phraseAccroche;
-    data.journal.themes.forEach((theme) => {
+
+
+  let titre = ` 
+  <div id="title-container">
+  <h2>${nomJournal}</h2>
+  <h1>${phraseAccroche}</h1>
+  </div>`
+
+  presentationContainer.insertAdjacentHTML("beforeend", titre);
+
+
+  data.journal.themes.forEach((theme) => {
           let themenom = theme.nom;
           let description = theme.description; 
           console.log(nomJournal,phraseAccroche,theme,description);
 
 
-
-    let presentation = ` 
-      <div id="title-container">
-      <h2>${nomJournal}</h2>
-      <h1>${phraseAccroche}</h1>
-      </div>
-
+let themePresentation = `
       <div class="theme-container">
          <h1>${themenom}</h1>
          <p>${description}</p>
       </div> `
 
-      presentationContainer.insertAdjacentHTML("beforeend", presentation);
+
+
+      presentationContainer.insertAdjacentHTML("beforeend", themePresentation);
 });
  }
 
@@ -206,4 +218,28 @@ function afficherArticles(data) {
   articleContainer.insertAdjacentHTML("afterend", articlePrincipal);
 
 });
+};
+
+// Fonction pour découvrir Notre équipe = les auteurs 
+
+function afficherAuteurs(data) {
+  let equipeContainer = document.getElementById('equipe-container');
+  data.journal.auteurs.forEach((auteur) => {
+  let image = auteur.image;
+  let typeExperience = auteur.typeExperience;
+  let prenom = auteur.prenom;
+  let presentation = auteur.presentation;
+     console.log(image,prenom,presentation);
+
+
+ let auteurs = `
+      <div class="auteurs">
+         <img src ="${image}" alt="${typeExperience}">
+         <h2>${prenom}</h2>
+         <p>${presentation}</p>
+      </div>`
+      
+
+      equipeContainer.insertAdjacentHTML("afterend", auteurs);
+  });
 };
