@@ -175,18 +175,18 @@ nav.insertAdjacentHTML("beforeend",buttonContainer);
 
 // Présentation des thèmes 
  function afficherPresentation(data) {
-  let presentationContainer = document.getElementById('presentation');
+  let presentationContainer = document.getElementById('title-container');
+  let container = document.getElementById('container')
   let nomJournal = data.journal.nomJournal;
   let phraseAccroche = data.journal.phraseAccroche;
 
 
-  let titre = ` 
-  <div id="title-container">
-  <h2>${nomJournal}</h2>
-  <h1>${phraseAccroche}</h1>
-  </div>`
+  let titre = ` <h2>${nomJournal}</h2>
+  <h1>${phraseAccroche}</h1>`
 
   presentationContainer.insertAdjacentHTML("beforeend", titre);
+
+  
 
 
   data.journal.themes.forEach((theme) => {
@@ -199,11 +199,10 @@ let themePresentation = `
       <div class="theme-container">
          <h1>${themenom}</h1>
          <p>${description}</p>
-      </div> `
-
-
-
-      presentationContainer.insertAdjacentHTML("beforeend", themePresentation);
+      </div>    
+      
+      ` 
+      container.insertAdjacentHTML("beforeend", themePresentation);
 });
  }
 
@@ -249,14 +248,14 @@ function afficherArticles(data) {
 
     
 
-    let articles = `<div id = "articles">
+    let articles = `<div class = "articles">
     <img src="${image}" alt="${titre}">
     <h1>${titre}</h1>
     <h2>${theme}  -  ${date} </h2>
     <a class ="button primary" href="#">Lire l'article </a>
  </div>`
 
-  articleContainer.insertAdjacentHTML("afterend", articles);
+  articleContainer.insertAdjacentHTML("beforeend", articles);
 
 });
 };
@@ -265,6 +264,22 @@ function afficherArticles(data) {
 
 function afficherAuteurs(data) {
   let equipeContainer = document.getElementById('equipe-container');
+let container = document.getElementById('container')
+
+  let phrase = "DECOUVREZ NOTRE EQUIPE";
+  console.log(phrase);
+  
+
+  let titleContainer = document.getElementById('discover-equipe')
+  console.log(titleContainer);
+  
+
+  titleContainer.innerHTML = phrase;
+
+  
+
+
+
   data.journal.auteurs.forEach((auteur) => {
   let image = auteur.image;
   let typeExperience = auteur.typeExperience;
@@ -273,7 +288,7 @@ function afficherAuteurs(data) {
   
      console.log(image,typeExperience,prenom,presentation);
 
-
+ 
 
 
  let auteurs = `
@@ -284,7 +299,7 @@ function afficherAuteurs(data) {
       </div>`
       
 
-      equipeContainer.insertAdjacentHTML("afterend", auteurs);
+      equipeContainer.insertAdjacentHTML("beforeend", auteurs);
   });
 };
 
