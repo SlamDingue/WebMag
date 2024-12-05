@@ -118,11 +118,13 @@ function getData() {
 
       // On appelle les fonctions après les avoir créer. Les fonctions sont en bas pour une meilleure visibilité. 
 
+
+      afficherNavigation(data);
       afficherPresentation(data);
       afficherArticle(data);
       afficherArticles(data);
       afficherAuteurs(data);
-      afficherNavigation(data);
+      afficherFooter(data)
 
        /// FIN DU CODE
      })
@@ -133,8 +135,9 @@ function getData() {
 
  ///ON écrit les fonctions ici
 
-// Barre de navigation 
 
+
+// Barre de navigation 
 function afficherNavigation(data) {
   let nav = document.querySelector('nav');
   let nomJournal = data.journal.nomJournal;
@@ -267,12 +270,15 @@ function afficherAuteurs(data) {
   let typeExperience = auteur.typeExperience;
   let prenom = auteur.prenom;
   let presentation = auteur.presentation;
-     console.log(image,prenom,presentation);
+  
+     console.log(image,typeExperience,prenom,presentation);
+
+
 
 
  let auteurs = `
       <div class="auteurs">
-         <img src ="${image}" alt="${typeExperience}">
+         <img src=${image} alt="${typeExperience}">
          <h2>${prenom}</h2>
          <p>${presentation}</p>
       </div>`
@@ -282,5 +288,13 @@ function afficherAuteurs(data) {
   });
 };
 
+// Footer : 
+function afficherFooter(data) {
+  let footer = document.querySelector('footer');
+  let nomJournal = data.journal.nomJournal;
+console.log (nomJournal);
 
-let h3 = journal.nom;
+let element = `<h3> ${nomJournal} 2024</h3>`
+
+footer.insertAdjacentHTML("beforeend", element);
+};

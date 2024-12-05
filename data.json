@@ -70,16 +70,19 @@
       ],
       "auteurs": [
         {
+          "image": "images/image.png",
           "prenom": "Claire",
           "typeExperience": "Chercheuse en neurosciences",
           "presentation": "Je travaille sur la compréhension des processus neuronaux et leur modélisation en IA."
         },
         {
+          "image": "images/image.png",
           "prenom": "Thomas",
           "typeExperience": "Ingénieur en IA",
           "presentation": "Spécialisé dans les algorithmes d'apprentissage profond, je m'inspire des structures cérébrales pour innover."
         },
         {
+          "image": "images/image.png",
           "prenom": "Elena",
           "typeExperience": "Éthicienne en technologies",
           "presentation": "J'explore les implications éthiques des technologies émergentes en neurosciences et intelligence artificielle."
