@@ -70,19 +70,19 @@
       ],
       "auteurs": [
         {
-          "image": "images/image.png",
+          "image": "https://img.freepik.com/photos-gratuite/jeune-brune-belle-femme-bouclee-pantalon-bordeaux-chemisier-blanc-regarde-devant-se-penche-table-bois-dans-chambre-confortable_197531-24092.jpg?uid=R173587543&ga=GA1.1.630895605.1730114092&semt=ais_hybrid",
           "prenom": "Claire",
           "typeExperience": "Chercheuse en neurosciences",
           "presentation": "Je travaille sur la compréhension des processus neuronaux et leur modélisation en IA."
         },
         {
-          "image": "images/image.png",
+          "image": "https://img.freepik.com/photos-gratuite/portrait-homme-moyen_23-2149005410.jpg?t=st=1733428654~exp=1733432254~hmac=cf426c9a177859ddbaa63ef0d05ceb311d5e183bc51f4e97b2967ab34f27535e&w=360",
           "prenom": "Thomas",
           "typeExperience": "Ingénieur en IA",
           "presentation": "Spécialisé dans les algorithmes d'apprentissage profond, je m'inspire des structures cérébrales pour innover."
         },
         {
-          "image": "images/image.png",
+          "image": "https://img.freepik.com/photos-gratuite/femme-senior-expressive-posant_344912-3042.jpg?t=st=1733428785~exp=1733432385~hmac=e41d9c875571d9e780372d9ee4591ab002ac2939d88dcc8ff06dfd7b95e4cc00&w=900",
           "prenom": "Elena",
           "typeExperience": "Éthicienne en technologies",
           "presentation": "J'explore les implications éthiques des technologies émergentes en neurosciences et intelligence artificielle."
