@@ -85,11 +85,77 @@ header {
    color: white;
 }
 
+#presentation {
+   display: flex;
+   width: 100%;
+   height: 100%;
+}
+
+h1 {
+   display: flex
+;
+   flex-direction: row;
+   justify-content: center;
+   font-family: 'Times New Roman', Times, serif;
+}
+
 /* Section article principal */
 
 
 
 /* Section équipe */
+#equipe-container{
+   display: flex;
+    gap: 32px;
+    padding: 32px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+
+/* Bloque Témoignages */
+.{
+   display:flex;
+   justify-content:space-evenly;
+   flex-wrap:wrap;
+   justify-content: space-around;
+   gap: 20px;
+   
+ 
+}
+#equipe-container{
+   display: flex;
+   height: 70%;
+   gap: 32px;
+   padding: 32px;
+   justify-content: space-around;
+   flex-direction: column;
+}
+
+.testimony p{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: italic;
+
+}
+
+.testimony{
+  padding: 15px;
+   box-shadow: 0px 4px 6px rgba(0,0,0, 0.1);
+   display: flex;
+   flex-direction: column; /* Place le contenu verticalement */
+   align-items: center;
+   justify-content: center;
+   flex-basis: calc(33.333% - 20px); /* Trois colonnes */
+   box-sizing: border-box; /* Inclut le padding dans la largeur */
+   background-color: #4335A7; /* Fond violet */
+   padding: 10px;
+   border-radius: 8px; /* Arrondi pour un effet moderne */
+   height: auto;
+   background-color: #FF8000;
+}
+
+
 
 
 /* Footer */

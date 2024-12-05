@@ -149,8 +149,8 @@ function afficherNavigation(data) {
   
 
 let logo = `<div id="logo">
-  <img src="" alt="Logo">
-  <h2>${nomJournal}</h2>`
+  <img src="images\logo.jpg" alt="Logo">
+  <h2>${nomJournal}</h2>`;
 
 nav.insertAdjacentHTML("beforeend", logo);
 
@@ -264,7 +264,7 @@ function afficherArticles(data) {
 
 function afficherAuteurs(data) {
   let equipeContainer = document.getElementById('equipe-container');
-let container = document.getElementById('container')
+  let bloqueEquipe = document.getElementById('bloque-equipe')
 
   let phrase = "DECOUVREZ NOTRE EQUIPE";
   console.log(phrase);
@@ -299,7 +299,7 @@ let container = document.getElementById('container')
       </div>`
       
 
-      equipeContainer.insertAdjacentHTML("beforeend", auteurs);
+      bloqueEquipe.insertAdjacentHTML("beforeend", auteurs);
   });
 };
 
