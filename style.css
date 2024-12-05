@@ -1,77 +1,203 @@
-/* importation de la police 'Poppins' de Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap');
-
-html, body{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   font-family: "Poppins", sans-serif;
-   font-weight: 800;
-   gap: 80px;
-   width: 100%;
-   height: 100%;  
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   color: #000;
+   background-color: #f8f8f8;
 }
 
-/* Navigateur */
+/* Style pour le nav */
 nav {
-   width: 100%;
-   height: 100%;
-   background-color: white;
+   background-color: #fff;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
+   padding: 10px 20px;
+   border-bottom: 1px solid #ccc;
 }
-
-/* On enlève les tirets de la liste et on met en horizontal */
-ul {
-   list-style-type: none;
-   display: flex;
-   gap: 10px;
-   font-size: large;
-   
- }
 
 #logo {
    display: flex;
+   align-items: center;
+}
+
+#logo img {
+   height: 40px;
+   margin-right: 10px;
+}
+
+#logo h2 {
+   font-size: 1.5em;
+   color: #000;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
    gap: 20px;
-   align-items: center;
+   margin: 0;
+   padding: 0;
 }
 
-.buttons-container{
-   display: flex; 
+nav ul li a {
+   text-decoration: none;
+   color: #000;
+   font-weight: bold;
+}
+
+.buttons-container {
+   display: flex;
    align-items: center;
+   gap: 10px;
+}
+
+.button.primary {
+   background-color: #8000ff;
+   color: #fff;
+   text-decoration: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+.avatar {
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+}
+
+/* Section présentation */
+#presentation {
+   background-color: #8000ff;
+   color: #fff;
+   text-align: center;
+   padding: 40px 20px;
+}
+
+#presentation h1 {
+   font-size: 2.5em;
+   margin-bottom: 10px;
+}
+
+/* Section article principal */
+#article-principal {
+   background-color: #f8f8f8;
+   padding: 40px 20px;
+   text-align: center;
+}
+
+#article-principal h1 {
+   font-size: 1.5em;
+   margin-bottom: 20px;
+}
+
+#article-principal p {
+   max-width: 700px;
+   margin: 0 auto 20px;
+   font-size: 1em;
+   line-height: 1.5;
+}
+
+#article-principal .button.primary {
+   background-color: #8000ff;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+/* Section article-container */
+#article-container {
+   background-color: #ffffff;
+   padding: 40px 20px;
+   text-align: center;
+}
+
+#article-container h1 {
+   font-size: 1.5em;
+   margin-bottom: 30px;
+}
+
+#article-container .buttons-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+#article-container .article {
+   background-color: #f0f0f0;
+   flex: 1 1 calc(48% - 10px);
+   padding: 20px;
+   border-radius: 8px;
+   text-align: center;
+}
+
+#article-container .article h3 {
+   font-size: 1.2em;
+   margin-bottom: 10px;
+}
+
+#article-container .article p {
+   font-size: 0.9em;
+   margin-bottom: 20px;
+}
+
+#article-container .article .button.primary {
+   background-color: #8000ff;
+   color: #fff;
+   padding: 8px 15px;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+/* Section équipe */
+#equipe-container {
+   background-color: #ffffff;
+   padding: 40px 20px;
+   text-align: center;
+}
+
+#equipe-container h1 {
+   font-size: 1.5em;
+   margin-bottom: 30px;
+}
+
+#equipe-container .team-members {
+   display: flex;
    justify-content: center;
-   gap: 16px;
+   gap: 20px;
+   flex-wrap: wrap;
 }
 
+#equipe-container .member {
+   max-width: 25%;
+   text-align: center;
+}
 
-.avatar{
+#equipe-container .member img {
+   background-color: #ccc;
    width: 100px;
    height: 100px;
-   border: solid 2px black;
-   border-radius: 100%;
-   object-fit: cover;
+   border-radius: 50%;
+   margin-bottom: 10px;
 }
 
-/* Partie présentation des thèmes  */
-#presentation{
-   display: flex;
-   width: 100%;
-   height: 60%;
-   padding: 32px;
-   background-color: #4335A7;
-   
-
-}
- 
-#title-container{
-   display: flex;
-   justify-content: space-evenly;
+#equipe-container .member h3 {
+   font-size: 1em;
+   margin-bottom: 5px;
 }
 
-#articlePrincipal{
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   height: 70%;
+#equipe-container .member p {
+   font-size: 0.9em;
+   color: #666;
+}
+
+/* Footer */
+footer {
+   background-color: #000;
+   color: #fff;
+   text-align: center;
+   padding: 20px 0;
+   font-size: 0.9em;
 }

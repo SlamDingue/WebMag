@@ -122,6 +122,7 @@ function getData() {
       afficherArticle(data);
       afficherArticles(data);
       afficherAuteurs(data);
+      afficherNavigation(data);
 
        /// FIN DU CODE
      })
@@ -131,6 +132,43 @@ function getData() {
  getData();
 
  ///ON écrit les fonctions ici
+
+// Barre de navigation 
+
+function afficherNavigation(data) {
+  let nav = document.querySelector('nav');
+  let nomJournal = data.journal.nomJournal;
+  let image = data.journal.image; 
+  let theme1nom = data.journal.themes[0].nom;
+  let theme2nom = data.journal.themes[1].nom;
+  let theme3nom = data.journal.themes[2].nom;
+  let phrase = "S'abonner";
+  
+
+let logo = `<div id="logo">
+  <img src="" alt="Logo">
+  <h2>${nomJournal}</h2>`
+
+nav.insertAdjacentHTML("beforeend", logo);
+
+let link= `<li><a class="link" href="">${theme1nom}</a></li>
+  <li><a class="link" href="">${theme2nom}</a></li>
+  <li><a class="link" href="">${theme3nom}</a></li>`
+
+
+nav.insertAdjacentHTML("beforeend", link);
+
+let buttonContainer= ` <a class ="button primary" href=""> ${phrase} </a>
+         <img class="avatar" src="avatar.jpg" alt="avatar chien cool">`
+
+
+nav.insertAdjacentHTML("beforeend",buttonContainer);
+
+
+
+
+}; 
+
 
 // Présentation des thèmes 
  function afficherPresentation(data) {
@@ -151,7 +189,7 @@ function getData() {
   data.journal.themes.forEach((theme) => {
           let themenom = theme.nom;
           let description = theme.description; 
-          console.log(nomJournal,phraseAccroche,theme,description);
+          console.log(themenom , description);
 
 
 let themePresentation = `
@@ -243,3 +281,6 @@ function afficherAuteurs(data) {
       equipeContainer.insertAdjacentHTML("afterend", auteurs);
   });
 };
+
+
+let h3 = journal.nom;
