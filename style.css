@@ -116,32 +116,34 @@ h1 {
 
 /* Bloque Témoignages */
 
-#dicoverEquipe{
-   display: flex;
-   justify-content: space-evenly;
+#discover-equipe{
+   font-weight: bold;
+   font-size: large;
 }
+
 
 #bloque-equipe{
    display:flex;
    justify-content: space-around;
-   align-items: flex-start;
    gap: 20px;
-   
- 
+   align-items: center;
 }
-#equipeContainer{
+
+#equipe-container{
    display: flex;
    height: 70%;
    gap: 32px;
    padding: 32px;
    justify-content: space-around;
    flex-direction: column;
+   align-items: center;
 }
 
 
 
 .auteurs{
    display: flex;
+   height: 60px;
    flex-direction: column; /* Place le contenu verticalement */
    align-items: center;
    justify-content: center;
@@ -162,6 +164,9 @@ h1 {
    object-fit: cover;
 }
 
+.auteurs p{
+   height: 60px;
+}
 
 /* Footer */
 footer {
