@@ -149,7 +149,7 @@ function afficherNavigation(data) {
   
 
 let logo = `<div id="logo">
-  <img src="https://img.freepik.com/vecteurs-libre/arriere-plan-intelligence-artificielle-dans-style-abstrait_23-2147866809.jpg?uid=R173587543&ga=GA1.1.630895605.1730114092&semt=ais_hybrid" alt="Logo">
+  <img src="images/logo.png" alt="Logo">
   <h2>${nomJournal}</h2>`;
 
 nav.insertAdjacentHTML("beforeend", logo);
@@ -272,7 +272,7 @@ function afficherArticles(data) {
     //  bloqueArticle.insertAdjacentHTML("beforeend", articles);
     //  cela ne veut pas s'afficher dans la div bloque article... 
 
-    bloqueArticle.insertAdjacentHTML("beforeend",articles)
+    articleContainer.insertAdjacentHTML("beforeend",articles)
 
 });
 };
