@@ -162,7 +162,7 @@ let link= `<li><a class="link" href="">${theme1nom}</a></li>
 nav.insertAdjacentHTML("beforeend", link);
 
 let buttonContainer= ` <a class ="button primary" href=""> ${phrase} </a>
-         <img class="avatar" src="avatar.jpg" alt="avatar chien cool">`
+         <img class="avatarchien" src="avatar.jpg" alt="avatar chien cool">`
 
 
 nav.insertAdjacentHTML("beforeend",buttonContainer);
@@ -293,7 +293,7 @@ function afficherAuteurs(data) {
 
  let auteurs = `
       <div class="auteurs">
-         <img src=${image} alt="${typeExperience}">
+         <img class="avatar" src=${image} alt="${typeExperience}">
          <h2>${prenom}</h2>
          <p>${presentation}</p>
       </div>`
