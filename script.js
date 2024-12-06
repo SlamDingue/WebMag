@@ -149,7 +149,7 @@ function afficherNavigation(data) {
   
 
 let logo = `<div id="logo">
-  <img src="images\logo.jpg" alt="Logo">
+  <img src="https://img.freepik.com/vecteurs-libre/arriere-plan-intelligence-artificielle-dans-style-abstrait_23-2147866809.jpg?uid=R173587543&ga=GA1.1.630895605.1730114092&semt=ais_hybrid" alt="Logo">
   <h2>${nomJournal}</h2>`;
 
 nav.insertAdjacentHTML("beforeend", logo);
@@ -236,35 +236,53 @@ function afficherArticle(data) {
 
 //  Fonction des articles que l'on affiche via la fonction , attention on appelle la fonction et c'est en haut . On fait une boucle dans la fonction pour que cela appelle les différents articles. 
 
+
 function afficherArticles(data) {
   let articleContainer = document.getElementById('article-container');
+  let bloqueArticle = document.getElementById ('bloque-article');
+
+  let phrase = "Autres Articles";
+  console.log (phrase);
+
+  let titleContainer = document.getElementById('discover-article')
+  console.log(titleContainer);
+  
+  titleContainer.innerHTML = phrase;
+
+
   data.journal.articles.forEach((article) => {
     let titre = article.titre;
     let date = article.date;
     let theme = article.theme;
     let image = article.image;
+
      console.log(titre, date,theme,image);
 
 
-    
-
-    let articles = `<div class = "articles">
+   let articles = `<div class = "articles">
     <img src="${image}" alt="${titre}">
     <h1>${titre}</h1>
     <h2>${theme}  -  ${date} </h2>
     <a class ="button primary" href="#">Lire l'article </a>
  </div>`
 
-  articleContainer.insertAdjacentHTML("beforeend", articles);
+  
+
+
+    //  bloqueArticle.insertAdjacentHTML("beforeend", articles);
+    //  cela ne veut pas s'afficher dans la div bloque article... 
+
+    bloqueArticle.insertAdjacentHTML("beforeend",articles)
 
 });
 };
 
 // Fonction pour découvrir Notre équipe = les auteurs 
+// OK lorsqu'on fait "inspecter" la page visualisation html
 
 function afficherAuteurs(data) {
   let equipeContainer = document.getElementById('equipe-container');
-  let bloqueEquipe = document.getElementById('bloque-equipe')
+  let bloqueEquipe = document.getElementById('bloque-equipe');
 
   let phrase = "DECOUVREZ NOTRE EQUIPE";
   console.log(phrase);
