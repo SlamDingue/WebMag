@@ -235,7 +235,7 @@ function afficherArticle(data) {
 }
 
 //  Fonction des articles que l'on affiche via la fonction , attention on appelle la fonction et c'est en haut . On fait une boucle dans la fonction pour que cela appelle les différents articles. 
-
+// Ok Lorsqu'on fait inspecter 
 
 function afficherArticles(data) {
   let articleContainer = document.getElementById('article-container');
@@ -267,12 +267,7 @@ function afficherArticles(data) {
  </div>`
 
   
-
-
-    //  bloqueArticle.insertAdjacentHTML("beforeend", articles);
-    //  cela ne veut pas s'afficher dans la div bloque article... 
-
-    articleContainer.insertAdjacentHTML("beforeend",articles)
+    bloqueArticle.insertAdjacentHTML("beforeend",articles)
 
 });
 };
