@@ -317,7 +317,7 @@ function afficherAuteurs(data) {
       </div>`
       
 
-      bloqueEquipe.insertAdjacentHTML("beforeend", auteurs);
+    bloqueEquipe.insertAdjacentHTML("beforeend", auteurs);
   });
 };
 
