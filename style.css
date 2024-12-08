@@ -165,8 +165,8 @@ text-transform: uppercase;
 
 /* Image des articles */
 .articles img {
-   width: 600px; /* Largeur fixe */
-   height: 450px; /* Hauteur fixe */
+   width: 600px;
+   height: 450px; 
    object-fit: cover; /* Remplit le cadre en respectant les proportions */
    border-radius: 5px;
 }
@@ -176,12 +176,14 @@ text-transform: uppercase;
    font-size: 18px;
    font-weight: bold;
    margin: 0;
+   text-transform: uppercase;
 }
 
 .articles h2 {
    font-size: 14px;
    color: #666;
    margin: 5px 0;
+   text-transform: uppercase;
 }
 
 /* Bouton */
