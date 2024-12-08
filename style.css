@@ -157,11 +157,25 @@ text-transform: uppercase;
    background-color: #5e00c9; /* Changement de couleur au survol */
 }
 
-#articlePrincipal-texte {
-   text-align: left;
+#articlePrincipal{
+   gap: 20px;
 }
 
-.articlePrincipal-texte h2 {
+#articlePrincipal-texte {
+   text-align: left;
+   
+}
+
+
+#articlePrincipal-texte h1 {
+   font-size: 18px;
+   font-weight: bold;
+   margin: 0;
+   text-transform: uppercase;
+}
+
+
+#articlePrincipal-texte h2 {
    font-size: 14px;
    color: black
    margin: 5px 0;
@@ -195,6 +209,8 @@ text-transform: uppercase;
    border-radius: 10px;
    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Image des articles */
 .articles img {
