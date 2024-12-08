@@ -117,28 +117,23 @@ text-transform: uppercase;
 
 
 /* Section article Principal */
-/* Section article Principal */
 #articlePrincipal {
    display: flex;
-   flex-direction: column; /* Aligne les éléments verticalement */
-   gap: 32px; /* Espace entre les éléments */
-   padding: 32px;
+   flex-direction: column; 
    color: black;
-   width: 100%; /* Occupe toute la largeur disponible */
+   width: 100%; 
 }
 
 /* Conteneur pour l'image */
 #articlePrincipal-image img {
-   width: 100%; /* Image occupe toute la largeur de la page */
-   height: auto; /* Ajuste la hauteur proportionnellement */
-   border-radius: 5px; /* Coins arrondis */
-   margin-bottom: 20px; /* Espacement avec le texte */
+   width: 100%; 
+   height: auto; 
    display: block; /* Supprime les espaces blancs autour de l'image */
 }
 
 /* Conteneur pour le texte */
 #articlePrincipal-texte {
-   text-align: center; /* Centre le texte horizontalement */
+   text-align: center; 
 }
 
 
@@ -173,6 +168,8 @@ text-transform: uppercase;
    text-transform:uppercase;
    font-weight:normal; 
 }
+
+
 /* Conteneur des articles */
 #discover-article{
    display: flex;
