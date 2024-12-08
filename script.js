@@ -224,10 +224,14 @@ function afficherArticle(data) {
 
 
     let articlePrincipal = `<div id = "articlePrincipal">
+    <div id = "articlePrincipal-image">
     <img src="${image}" alt="${titre}">
+    </div>
+    <div id = "articlePrincipal-texte">
     <h1>${titre}</h1>
     <h2>${theme}  -  ${date} </h2>
     <p>${description}</p>
+    </div>
     <a class ="button primary" href="#">Lire l'article </a>
  </div>`
 
