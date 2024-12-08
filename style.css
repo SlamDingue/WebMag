@@ -130,10 +130,76 @@ text-transform: uppercase;
    
 }
 /* Section articles */
-#articles{
-   display: flex;
+
+#article-container {
+   padding: 20px;
+   font-family: Arial, sans-serif;
 }
 
+/* Titre principal */
+#discover-article {
+   text-align: center;
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+/* Conteneur des articles */
+#bloque-article {
+   display: flex;
+   flex-direction: column; /* Empile les articles verticalement */
+   gap: 20px; /* Espace entre les articles */
+  
+}
+
+/* Style de chaque article */
+.articles {
+   display: flex;
+   align-items: flex-start; /* Aligne l'image et le texte sur le haut */
+   gap: 20px; /* Espace entre l'image et le contenu */
+   padding: 20px;
+   background-color: #f5f5f5;
+   border-radius: 10px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image des articles */
+.articles img {
+   width: 600px; /* Largeur fixe */
+   height: 450px; /* Hauteur fixe */
+   object-fit: cover; /* Remplit le cadre en respectant les proportions */
+   border-radius: 5px;
+}
+
+/* Contenu texte */
+.articles h1 {
+   font-size: 18px;
+   font-weight: bold;
+   margin: 0;
+}
+
+.articles h2 {
+   font-size: 14px;
+   color: #666;
+   margin: 5px 0;
+}
+
+/* Bouton */
+.articles a.button.primary {
+   display: inline-block;
+   margin-top: 10px;
+   padding: 10px 20px;
+   background-color: #8000ff;
+   color: #fff;
+   text-decoration: none;
+   font-size: 14px;
+   border-radius: 5px;
+   text-align: center;
+}
+
+.articles a.button.primary:hover {
+   background-color: #5e00c9; /* Changement de couleur au survol */
+}
 
 /* Section équipe */
 #equipe-container{
